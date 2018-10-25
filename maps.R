@@ -1,4 +1,5 @@
 
+library(ggplot)
 ggplot(data = merged_data,aes(merged_data$population))+
   geom_histogram(color ='black', fill= 'white')
 

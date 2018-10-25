@@ -1,10 +1,10 @@
 
 library(ggplot2)
 ggplot(data = merged_data,aes(merged_data$population))+
-  geom_histogram(color ='black', fill= 'white' , bins = 30)
+  geom_histogram(color ='black', fill= 'white' , bins = 50)
 
 ggplot(data = merged_data,aes(merged_data$Murder))+
-  geom_histogram(color ='black', fill= 'white' bins = 30)
+  geom_histogram(color ='black', fill= 'white' bins = 50)
 
 ##5)	Create a boxplot for the population, and a different boxplot for the murder rate.
 

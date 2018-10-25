@@ -1,0 +1,81 @@
+{
+    "collaborators": [
+        "adjadhav"
+    ],
+    "created_at": "2018-10-25 17:08:28",
+    "edges": [
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "scprc_est_2017_18_pop_res.csv",
+            "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "arrests",
+                    "output": "arrests",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "copy.R",
+            "target": "merge.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "clean_data",
+                    "output": "clean_data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "merge.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "merged_data",
+                    "output": "merged_data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "merge.R",
+            "target": "maps.R"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "scprc_est_2017_18_pop_res.csv"
+        },
+        {
+            "assigned_to": "adjadhav",
+            "name": "clean.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "adjadhav",
+            "desc": "",
+            "name": "copy.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "adjadhav",
+            "desc": "",
+            "name": "merge.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "adjadhav",
+            "desc": "",
+            "name": "maps.R",
+            "task_status": "in progress"
+        }
+    ],
+    "updated_at": "2018-10-25 17:25:39",
+    "url": "https://github.com/fall2018-wallace/hw6"
+}

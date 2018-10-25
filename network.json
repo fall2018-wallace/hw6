@@ -24,6 +24,17 @@
             ],
             "source": "clean.R",
             "target": "merge.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "arrests",
+                    "output": "arrests",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "copy.R",
+            "target": "merge.R"
         }
     ],
     "nodes": [
@@ -48,6 +59,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-25 17:16:57",
+    "updated_at": "2018-10-25 17:17:26",
     "url": "https://github.com/fall2018-wallace/hw6"
 }

@@ -1,8 +1,8 @@
 
 library(ggplot2)
-ggplot(data = merged_data,aes(merged_data$population))+
+hist1 <- ggplot(data = merged_data,aes(merged_data$population))+
   geom_histogram(color ='black', fill= 'white' , bins = 50)
-
+hist1
 ggplot(data = merged_data,aes(merged_data$Murder))+
   geom_histogram(color ='black', fill= 'white' bins = 50)
 

@@ -1,6 +1,6 @@
 
 library(ggplot2)
-hist1 <- ggplot(data = merged_data,aes(merged_data$population))+
+hist1 <- ggplot(data = merged_data, aes(merged_data$population))+
   geom_histogram(color ='black', fill= 'white' , bins = 50)
 hist1
 hist2 <- ggplot(data = merged_data,aes(merged_data$Murder))+
@@ -14,7 +14,6 @@ boxplot1
 boxplot2 <- ggplot(data= merged_data,aes(y=merged_data$Murder , x=as.factor(0)))+
   geom_boxplot()
 boxplot2
-# Step 6 I woulf prefer histogram over boxplot for visualization as thet are easier to view and understand as compared to box plot. 
 
 ##Step C: Which State had the Most Murders - bar charts
 ##7)	Calculate the number of murders per state
